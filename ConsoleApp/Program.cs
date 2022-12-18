@@ -16,13 +16,23 @@ static string WriteMessageForStringOfAsAndBs(int a, int b) =>
 static string WriteMessageForParkingBill(string E, string L) =>
     $"Price for parking (entrace: {E}, left: {L}) is ${new Parking(TimeSpan.Parse(E), TimeSpan.Parse(L)).Bill}";
 
+static string WriteMessageForFirstNonRepeatingMemberInArray(int[] array) =>
+    $"First non-repeating member in array {string.Join(", ",array)} is {array.FirstNonRepeatingMember()}";
+
 static string WriteMessageForHighestPowerOf2ThatDividesN(int N) =>
     $"Given N={N} the highest power of two that divides it is: {N.HighestPowerOf2ThatDividesN()}";
 
 Console.WriteLine("Simple start:");
 Console.WriteLine(WriteSimpleExampleForWordCount("Hello Extension Methods"));
-Console.WriteLine("\r\nExercise 5\r\nCoding skills");
-Console.WriteLine("\r\nTask: ParkingBill\r\n");
+
+Console.WriteLine("\r\nTask: FirstUnique\r\n");
+Console.WriteLine("\r\nExercise 5\r\nAlgortihmic skills");
+Console.WriteLine(WriteMessageForFirstNonRepeatingMemberInArray(new int[] { 2, 3, 2, 4, 3, 1 }));
+Console.WriteLine(WriteMessageForFirstNonRepeatingMemberInArray(new int[] { 2, 3, 2, 1, 3, 1 }));
+foreach (var _ in Enumerable.Range(0, howManyLoopExamples))
+    Console.WriteLine(WriteMessageForFirstNonRepeatingMemberInArray(Enumerable
+        .Repeat(0, 5).Select(i => getrandom.Next(0, 9)).ToArray()));
+Console.WriteLine("\r\nExercise 4\r\nCoding skills");
 Console.WriteLine(WriteMessageForParkingBill("09:42", "11:42"));
 Console.WriteLine(WriteMessageForParkingBill("10:00", "13:21"));
 Console.WriteLine("\r\nTask: ParityDegree\r\n");
