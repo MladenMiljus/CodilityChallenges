@@ -1,0 +1,10 @@
+﻿<Project>  
+  <PropertyGroup Label="Package Labels">
+    <Authors>Mladen Miljuš</Authors>
+    <Company>Mladen Miljuš</Company>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/MladenMiljus/CodilityChallenges</RepositoryUrl>
+	<Title>Mladen Miljus Codility Challenges</Title>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+</Project>

@@ -3,7 +3,7 @@
 internal static class ExtensionsForTheseProblems
 {
     public static int WordCount(this string str) =>
-        str.Split(new char[] { ' ', '.', '?', '!' }, 
+        str.Split(new char[] { ' ', '.', '?', '!' },
             options: StringSplitOptions.RemoveEmptyEntries).Length;
 
     public static int HighestPowerOf2ThatDividesN(this int n)
